@@ -10,23 +10,33 @@ public class Lab12 {
 //        String msg = "It was the best of times, it was the worst of times.\n";
 //        String hashValue = hashString(msg, "SHA-1");
 
-        String hashValue = hashAFile(new File("TwoCities.txt"), "MD5");
-        System.out.println(hashValue + "  " + "TwoCities.txt");
-        hashValue = hashAFile(new File("anassa.txt"), "MD5");
-        System.out.println(hashValue + "  " + "anassa.txt");
-        hashValue = hashAFile(new File("moby10b.txt"), "MD5");
-        System.out.println(hashValue + "  " + "moby10b.txt");
-        hashValue = hashAFile(new File("spongeBob.jpg"), "MD5");
-        System.out.println(hashValue + "  " + "spongeBob.jpg");
+//        String hashValue = hashAFile(new File("TwoCities.txt"), "MD5");
+//        System.out.println(hashValue + "  " + "TwoCities.txt");
+//        hashValue = hashAFile(new File("anassa.txt"), "MD5");
+//        System.out.println(hashValue + "  " + "anassa.txt");
+//        hashValue = hashAFile(new File("moby10b.txt"), "MD5");
+//        System.out.println(hashValue + "  " + "moby10b.txt");
+//        hashValue = hashAFile(new File("spongeBob.jpg"), "MD5");
+//        System.out.println(hashValue + "  " + "spongeBob.jpg");
+//
+//        hashValue = hashAFile(new File("TwoCities.txt"), "SHA-1");
+//        System.out.println(hashValue + "  " + "TwoCities.txt");
+//        hashValue = hashAFile(new File("anassa.txt"), "SHA-1");
+//        System.out.println(hashValue + "  " + "anassa.txt");
+//        hashValue = hashAFile(new File("moby10b.txt"), "SHA-1");
+//        System.out.println(hashValue + "  " + "moby10b.txt");
+//        hashValue = hashAFile(new File("spongeBob.jpg"), "SHA-1");
+//        System.out.println(hashValue + "  " + "spongeBob.jpg");
 
-        hashValue = hashAFile(new File("TwoCities.txt"), "SHA-1");
-        System.out.println(hashValue + "  " + "TwoCities.txt");
-        hashValue = hashAFile(new File("anassa.txt"), "SHA-1");
-        System.out.println(hashValue + "  " + "anassa.txt");
-        hashValue = hashAFile(new File("moby10b.txt"), "SHA-1");
-        System.out.println(hashValue + "  " + "moby10b.txt");
-        hashValue = hashAFile(new File("spongeBob.jpg"), "SHA-1");
-        System.out.println(hashValue + "  " + "spongeBob.jpg");
+        String hashValue = hashAFile(new File("shattered-1.pdf"), "MD5");
+        System.out.println(hashValue + "  " + ".shattered-1.pdf");
+        hashValue = hashAFile(new File("shattered-2.pdf"), "MD5");
+        System.out.println(hashValue + "  " + "shattered-2.pdf");
+        hashValue = hashAFile(new File("shattered-1.pdf"), "SHA-1");
+        System.out.println(hashValue + "  " + ".shattered-1.pdf");
+        hashValue = hashAFile(new File("shattered-2.pdf"), "SHA-1");
+        System.out.println(hashValue + "  " + "shattered-2.pdf");
+
     } //main()
 
     private static String hashString(String message, String algorithm) {
