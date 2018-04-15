@@ -1,0 +1,13 @@
+import hashlib
+
+def hashString(msg, algorithm):
+    digest = hashlib.new(algorithm)
+    digest.update(msg)
+    return digest.hexdigest()
+
+def main():
+    msg = b"It was the best of times, it was the worst of times.\n"
+    hashValue = hashString(msg, "SHA1")
+    print(hashValue, "  ", msg)
+
+main()
