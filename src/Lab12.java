@@ -7,10 +7,11 @@ import java.security.NoSuchAlgorithmException;
 
 public class Lab12 {
     public static void main(String[] args) {
-        String msg = "It was the best of times, it was the worst of times.\n";
-        String hashValue = hashString(msg, "SHA-1");
+//        String msg = "It was the best of times, it was the worst of times.\n";
+//        String hashValue = hashString(msg, "SHA-1");
 
-        System.out.println(hashValue + "  " + msg);
+        String hashValue = hashAFile(new File("TwoCities.txt"), "MD5");
+        System.out.println(hashValue + "  " + "TwoCities.txt");
     } //main()
 
     private static String hashString(String message, String algorithm) {
