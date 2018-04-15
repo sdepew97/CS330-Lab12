@@ -12,8 +12,8 @@ public class Lab12 {
 
         String hashValue = hashAFile(new File("TwoCities.txt"), "MD5");
         System.out.println(hashValue + "  " + "TwoCities.txt");
-        hashValue = hashAFile(new File("Anassa.txt"), "MD5");
-        System.out.println(hashValue + "  " + "Anassa.txt");
+        hashValue = hashAFile(new File("anassa.txt"), "MD5");
+        System.out.println(hashValue + "  " + "anassa.txt");
         hashValue = hashAFile(new File("Moby10.txt"), "MD5");
         System.out.println(hashValue + "  " + "Moby10.txt");
         hashValue = hashAFile(new File("spongeBob.jpg"), "MD5");
@@ -21,8 +21,8 @@ public class Lab12 {
 
         hashValue = hashAFile(new File("TwoCities.txt"), "SHA-1");
         System.out.println(hashValue + "  " + "TwoCities.txt");
-        hashValue = hashAFile(new File("Anassa.txt"), "SHA-1");
-        System.out.println(hashValue + "  " + "Anassa.txt");
+        hashValue = hashAFile(new File("anassa.txt"), "SHA-1");
+        System.out.println(hashValue + "  " + "anassa.txt");
         hashValue = hashAFile(new File("Moby10.txt"), "SHA-1");
         System.out.println(hashValue + "  " + "Moby10.txt");
         hashValue = hashAFile(new File("spongeBob.jpg"), "SHA-1");
